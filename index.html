@@ -750,7 +750,6 @@
                     modalCustomer.style.display = "flex";
                 }
                 else {
-                    console.log("buh");
                     headerCustomer.classList.remove('active');
                     modalCustomer.style.display = "none";
                 }
@@ -776,8 +775,24 @@
                 setTimeout(handleEvents.showSlides, 10000);
             },
             clickDotToChangeSlide: () => {
-                dot.onclick = () => {
-
+                
+                dots[0].onclick = () => {
+                    var i;
+                    slides[1].style.display = "none";
+                    slideIndex++;
+                    if(slideIndex > slides.length) slideIndex = 1;
+                    dots[1].className = dots[1].className.replace(" active", "");
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+                dots[1].onclick = () => {
+                    var i;
+                    slides[0].style.display = "none";
+                    slideIndex++;
+                    if(slideIndex > slides.length) slideIndex = 1;
+                    dots[0].className = dots[0].className.replace(" active", "");
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
                 }
             }
         }
@@ -786,6 +801,7 @@
         handleEvents.highlightSelectedBar();
         handleEvents.openLanguagesOption();
         handleEvents.showSlides();
+        handleEvents.clickDotToChangeSlide();
 
         const closeModal = () => {
                 radioDate.checked = false;
