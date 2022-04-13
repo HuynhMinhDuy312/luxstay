@@ -421,29 +421,10 @@
 }
 
 .popular-places__container {
-    overflow-x: auto;
     white-space: nowrap;
     scroll-behavior: smooth;
 }
 
-.popular-places__container::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.popular-places__container::-webkit-scrollbar-track {
-    background: white;
-}
-
-.popular-places__container::-webkit-scrollbar-thumb {
-    background: #7f7f7f;
-    border-radius: 10px;
-    visibility: hidden;
-}
-
-.popular-places__container:hover::-webkit-scrollbar-thumb {
-    visibility: visible;
-}
 
 .popular-places__list {
     display: flex;
@@ -452,7 +433,7 @@
 
 .popular-places__item {
     position: relative;
-    margin: 12px 10px 0 10px;
+    margin: 12px 0px 0 0px;
 }
 
 .popular-places__item:hover {
@@ -494,9 +475,10 @@
     font-weight: 700;
 }
 
+
 .exclusive-offer {
     width: 100%;
-    margin-top: 32px;
+    margin-top: 64px;
 }
 
 .exclusive-offer__text {
@@ -531,13 +513,12 @@
 }
 
 .suggestion {
-    margin-top: 32px;
+    margin-top: 64px;
     width: 100%;
 }
 
 .suggestion__posts-container {
     width: 100%;
-    overflow-x: auto;
     white-space: nowrap;
     scroll-behavior: smooth;
 }
@@ -549,12 +530,14 @@
 }
 
 .suggestion__posts-item {
-    display: flex;
-    flex-direction: column;
-    margin: 0 12px;
-    width: 310px;
+    /* margin: 0 12px; */
     white-space: normal;
     cursor: pointer;
+}
+
+.suggestion__posts-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .suggestion__posts-item:first-child {
@@ -582,54 +565,26 @@
     color: var(--link-color);
 }
 
-.suggestion__posts-container::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.suggestion__posts-container::-webkit-scrollbar-track {
-    background: white;
-}
-
-.suggestion__posts-container::-webkit-scrollbar-thumb {
-    background: #7f7f7f;
-    border-radius: 10px;
-    visibility: hidden;
-}
-
-.suggestion__posts-container:hover::-webkit-scrollbar-thumb {
-    visibility: visible;
-}
-
 .discovery {
     width: 100%;
     margin-top: 50px;
 }
 
 .discovery__container {
-    width: 100%;
-    overflow-x: auto;
     white-space: nowrap;
-    scroll-behavior: smooth;
 }
 
-.discovery__list {
-    display: flex;
-    flex-direction: row;
-    padding-left: 0;
-}
 
 .discovery__item {
     position: relative;
-    min-width: 420px;
     height: 265px;
     background: linear-gradient(#eeeeee,#7b7b7b);
     margin: 12px;
 }
 
-.discovery__item:first-child {
+/* .discovery__item:first-child {
     margin-left: 0;
-}
+} */
 
 .discovery__tag {
     display: flex;
@@ -665,27 +620,8 @@
     line-height: 2.6rem;
 }
 
-.discovery__container::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.discovery__container::-webkit-scrollbar-track {
-    background: white;
-}
-
-.discovery__container::-webkit-scrollbar-thumb {
-    background: #7f7f7f;
-    border-radius: 10px;
-    visibility: hidden;
-}
-
-.discovery__container:hover::-webkit-scrollbar-thumb {
-    visibility: visible;
-}
-
 .tutorials {
-    margin-top: 32px;
+    margin-top: 64px;
 }
 
 .tutorials__list {
@@ -712,6 +648,7 @@
 
 .mobile-section {
     display: flex;
+    margin-top: 50px;
 }
 
 .mobile__left,
