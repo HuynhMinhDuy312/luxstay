@@ -45,7 +45,6 @@
     width: 300px;
     height: 50px;
     padding: 4px 0 0 12px;
-
 }
 
 .header__svg:hover {
@@ -91,7 +90,6 @@
     align-items: center;
     justify-content: center;
 }
-
 
 .header__search-customer-label:hover {
     cursor: pointer;
@@ -194,7 +192,7 @@
 }
 
 .date-modal__sample {
-    font-size: 6.0rem;
+    font-size: 6rem;
 }
 
 .customer-modal {
@@ -207,7 +205,6 @@
     left: 450px;
     animation: fadeIn linear 0.2s;
     background-color: white;
-
 }
 
 .customer-modal__options {
@@ -289,7 +286,7 @@
 }
 
 .options-accept {
-    color: var(--link-color)
+    color: var(--link-color);
 }
 
 .languages-modal {
@@ -314,7 +311,6 @@
     border-color: transparent transparent white transparent;
 }
 
-
 .languages-section {
     display: flex;
     flex-direction: column;
@@ -331,7 +327,6 @@
     height: 16px;
     border-radius: 50%;
     object-fit: cover;
-    
 }
 
 .languages-text {
@@ -425,7 +420,6 @@
     scroll-behavior: smooth;
 }
 
-
 .popular-places__list {
     display: flex;
     padding: 0;
@@ -475,7 +469,6 @@
     font-weight: 700;
 }
 
-
 .exclusive-offer {
     width: 100%;
     margin-top: 64px;
@@ -523,7 +516,7 @@
     scroll-behavior: smooth;
 }
 
-.suggestion__posts-list{
+.suggestion__posts-list {
     display: flex;
     flex-direction: row;
     padding-left: 0;
@@ -574,11 +567,10 @@
     white-space: nowrap;
 }
 
-
 .discovery__item {
     position: relative;
     height: 265px;
-    background: linear-gradient(#eeeeee,#7b7b7b);
+    background: linear-gradient(#eeeeee, #3b2dfa);
     margin: 12px;
 }
 
@@ -591,8 +583,8 @@
     position: absolute;
     width: 200px;
     height: 24px;
-    background-color: #bebebe;
-    color: white;
+    background-color: #fffcfc;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
     font-weight: 600;
     align-items: center;
@@ -643,7 +635,7 @@
 }
 
 .tutorials__img {
-    width: 232px;
+    width: 100%;
 }
 
 .mobile-section {
@@ -733,7 +725,6 @@
     margin: 12px 0 12px 12px;
 }
 
-
 .contact__heading {
     font-size: 1.4rem;
     font-weight: 600;
@@ -791,7 +782,7 @@
 .Favorite__item:hover,
 .space__item:hover,
 .about__item:hover {
-    color: var(--link-color)
+    color: var(--link-color);
 }
 
 .space__heading {
